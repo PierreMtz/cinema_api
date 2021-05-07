@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Appli_Cinéma.Migrations
 {
     [DbContext(typeof(CinemaDBContext))]
-    [Migration("20210305130424_Migration3")]
-    partial class Migration3
+    [Migration("20210409120827_Migration1")]
+    partial class Migration1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

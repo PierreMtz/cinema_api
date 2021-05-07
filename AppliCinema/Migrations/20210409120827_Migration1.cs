@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Appli_Cinéma.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class Migration1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -204,11 +204,13 @@ namespace Appli_Cinéma.Migrations
                     Film_ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     TypeFilm_ID = table.Column<int>(nullable: false),
+                    Film_Description = table.Column<string>(nullable: true),
                     Film_Horraires = table.Column<string>(nullable: true),
                     Film_Durée = table.Column<string>(nullable: true),
                     Film_Nom = table.Column<string>(nullable: true),
                     TypeFilm_Nom = table.Column<string>(nullable: true),
-                    Salle_ID = table.Column<int>(nullable: false)
+                    Salle_ID = table.Column<int>(nullable: false),
+                    Image = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

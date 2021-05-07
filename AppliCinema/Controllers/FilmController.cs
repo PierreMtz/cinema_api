@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Appli_Cinéma.Controllers
 {
-   // [Authorize]
+    
     [ApiController]
     [Route("films")]
   
@@ -56,11 +56,18 @@ namespace Appli_Cinéma.Controllers
 
             }
 
-            [HttpDelete("{film_Id}")]
-
+            [HttpDelete("{filmId}")]
             public async Task<ActionResult> DeleteFilm(int filmId)
             {
-                await _filmRepository.DeleteFilm(filmId);
+                Film film = await _filmRepository.GetFilmById(filmId);
+
+                if(film == null)
+                {
+                    return NotFound("Le film n'existe pas.");
+                }
+            
+                await _filmRepository.DeleteFilm(film);
+
                 return NoContent();
             }
         }

@@ -11,7 +11,7 @@ namespace Appli_Cinéma.Repositories
         public Task<List<Film>> GetFilm();
         public Task<Film> GetFilmById(int id);
         public Task CreateFilm(Film film);
-        public Task DeleteFilm(int id);
+        public Task DeleteFilm(Film film);
         public Task UpdateFilm(Film film);
     }
 }

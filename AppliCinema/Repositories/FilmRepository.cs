@@ -37,9 +37,8 @@ namespace Appli_Cinéma.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteFilm(int id)
+        public async Task DeleteFilm(Film film)
         {
-            Film film = await GetFilmById(id);
             _context.Film.Remove(film);
             await _context.SaveChangesAsync();
         }
