@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <RootNamespace>Appli_Cinéma</RootNamespace>
+    <RootNamespace>cinema_api</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>D:\Cinema\cinema_api-main\AppliCinema\AppliCinema.xml</DocumentationFile>
+    <DocumentationFile>C:\Users\JEROME CHARLAT\Desktop\cinema_api\cinema_api\cinema_api.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace Appli_Cinéma.Migrations
+namespace cinema_api.Migrations
 {
     [DbContext(typeof(CinemaDBContext))]
     partial class CinemaDBContextModelSnapshot : ModelSnapshot

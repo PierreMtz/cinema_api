@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Appli_Cinéma.Migrations
+namespace cinema_api.Migrations
 {
-    public partial class Migration1 : Migration
+    public partial class Azure_Migration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

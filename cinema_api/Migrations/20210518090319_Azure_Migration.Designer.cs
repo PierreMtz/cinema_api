@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace Appli_Cinéma.Migrations
+namespace cinema_api.Migrations
 {
     [DbContext(typeof(CinemaDBContext))]
-    [Migration("20210409120827_Migration1")]
-    partial class Migration1
+    [Migration("20210518090319_Azure_Migration")]
+    partial class Azure_Migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
