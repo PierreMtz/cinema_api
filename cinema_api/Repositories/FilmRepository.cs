@@ -20,6 +20,15 @@ namespace Appli_Cinéma.Repositories
         {
             return await _context.Film.ToListAsync();
         }
+        public async Task<List<Film>> GetFilmC()
+        {
+            return await _context.Film.Where(f => f.Film_Nom.Contains('c')).ToListAsync();
+        }
+        public async Task<List<Film>> GetFilmBySalle()
+        {
+            return await _context.Film.OrderBy(f => f.Salle_ID).ToListAsync();
+
+        }
         public async Task<Film> GetFilmById(int id)
         {
             return await _context.Film.Where(f => f.Film_ID == id).FirstOrDefaultAsync();

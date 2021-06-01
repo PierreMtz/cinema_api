@@ -27,16 +27,26 @@ namespace Appli_Cinéma.Controllers
             {
                 return Ok(await _filmRepository.GetFilm());
             }
+            [HttpGet("c")]
+            public async Task<ActionResult<ICollection<Film>>> GetFilmsC()
+            {
+                return Ok(await _filmRepository.GetFilmC());
+            }
 
-            [HttpGet("{film_Id}", Name = "GetFilm")]
+        [HttpGet("{film_Id}", Name = "GetFilm")]
             public async Task<ActionResult<Film>> GetFilmById(int film_Id)
             {
 
                 return Ok(await _filmRepository.GetFilmById(film_Id));
             }
+        [HttpGet("Salle")]
+        public async Task<ActionResult<ICollection<Film>>> GetFilmBySalle()
+        {
+            return Ok(await _filmRepository.GetFilmBySalle());
+        }
 
 
-            [HttpPost]
+        [HttpPost]
 
             public async Task<ActionResult> CreateFilm([FromBody] Film film)
             {

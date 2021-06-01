@@ -21,5 +21,7 @@ namespace Appli_Cinéma.Modele
         [ForeignKey("Salle_ID")]
         public Salle Salle { get; set; }
         public string Image{ get; set; }
+        public string DateFilm { get; set; }
+
     }
 }
